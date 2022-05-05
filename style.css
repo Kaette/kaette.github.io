@@ -1,0 +1,126 @@
+html, body{
+    background: #F7F6F2;
+    margin: auto;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    height: 40px;
+    color: #F7F6F2;
+
+    color: aqua;
+}
+
+.header>a{
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#darkModeToggle{
+    float: right;
+    background: none;
+}
+
+@keyframes centerFrames{
+    0% {color: #F7F6F2;}
+    100% {color: black;}
+    0% {top: 30%;}
+    100% {top: 25%;}
+}
+
+.center{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    position: relative;
+    top: 25%;
+
+    animation: centerFrames;
+    animation-duration: 2s;
+}
+
+.center>a{
+    color: black;
+
+    animation: centerFrames;
+    animation-duration: 2s;
+}
+
+@keyframes linkHover {
+    0% {}
+}
+
+button{
+    background: #F7F6F2;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@keyframes gridFrames {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.projectGrid{
+    display: grid;
+
+    position: relative;
+    top: 40%;
+    height: 200px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20px;
+
+    text-align: center;
+    gap: 40px;
+    padding: 20px;
+
+    animation: gridFrames;
+    animation-duration: 3s;
+}
+
+.projectGrid>*{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+
+    background: #F0E5CF;
+
+    width: 100%;
+}
+
+.gridElementText{
+    height: 75%;
+}
+
+@keyframes underlineAnimation {
+    0% {border-bottom-style: none;}
+    100% {border-bottom-style: solid;}
+}
+
+.projectGrid>*>*>a{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projectGrid.a:hover{
+    animation: underlineAnimation;
+    animation-duration: 2s;
+}
+
+.footer{
+    border-top-color: black;
+    border-top-style: solid;
+}
