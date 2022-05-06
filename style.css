@@ -99,6 +99,8 @@ button{
     background: #F0E5CF;
 
     width: 100%;
+
+    box-shadow: 10px 10px 5px lightgray;
 }
 
 .gridElementText{

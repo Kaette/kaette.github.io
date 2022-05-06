@@ -14,6 +14,7 @@ function toggleDarkMode(){
         invertColor("fa-brands", "#FFD369")
         invertColor2("gridElement", "#222831")
         invertColor("text", "#EEEEEE")
+        document.getElementById("element1").style.boxShadow = "10px 10px 5px lightgray";
     }
 }
 
